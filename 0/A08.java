@@ -13,22 +13,22 @@ public class A8{
 
     	StringBuffer sb = new StringBuffer();
     	
-    	// NÀ» ÀÔ·Â ¹Þ¾Æ N±îÁöÀÇ ¼ö Áß¿¡ ¼Ò¼ö¸¦ Ã£´Â´Ù
+    	// Nì„ ìž…ë ¥ ë°›ì•„ Nê¹Œì§€ì˜ ìˆ˜ ì¤‘ì— ì†Œìˆ˜ë¥¼ ì°¾ëŠ”ë‹¤
     	int n = Integer.parseInt( in.readLine() );
     	
-    	// N°³ÀÇ °ø°£ÀÌ ÀÖ´Â ¹è¿­ »ý¼º ( True = ¼Ò¼öX / False = ¼Ò¼ö )
+    	// Nê°œì˜ ê³µê°„ì´ ìžˆëŠ” ë°°ì—´ ìƒì„± ( True = ì†Œìˆ˜X / False = ì†Œìˆ˜ )
     	boolean array[] = new boolean[ n + 1 ];
     	
-    	// ·çÆ® N * 2 > N ÀÌ¹Ç·Î ·çÆ® Nº¸´Ù ÀÛÀº ¼öÀÇ ¹è¼ö·Î¸¸ °è»êÇØµµ ÃæºÐÇÏ´Ù
+    	// ë£¨íŠ¸ N * 2 > N ì´ë¯€ë¡œ ë£¨íŠ¸ Në³´ë‹¤ ìž‘ì€ ìˆ˜ì˜ ë°°ìˆ˜ë¡œë§Œ ê³„ì‚°í•´ë„ ì¶©ë¶„í•˜ë‹¤
     	int check = (int)Math.sqrt( n );
     	
-    	// 2ºÎÅÍ ½ÃÀÛÇÏ¿© ·çÆ® N±îÁöÀÇ ¹è¼öµéÀ» ¹è¿­¿¡¼­ False·Î Ä¡È¯ 
+    	// 2ë¶€í„° ì‹œìž‘í•˜ì—¬ ë£¨íŠ¸ Nê¹Œì§€ì˜ ë°°ìˆ˜ë“¤ì„ ë°°ì—´ì—ì„œ Falseë¡œ ì¹˜í™˜ 
     	for( int a=2; a<=check; a++ ) {
     		
-    		// array[a]°¡ ¼Ò¼ö°¡ ¾Æ´Ï¸é
+    		// array[a]ê°€ ì†Œìˆ˜ê°€ ì•„ë‹ˆë©´
     		if( !array[a] ) {
     			
-    			// aÀÇ ¹è¼öÀÇ ¸ðµç ¼ýÀÚ¸¦ ¼Ò¼ö°¡ ¾Æ´Ï¶ó°í Ä¡È¯
+    			// aì˜ ë°°ìˆ˜ì˜ ëª¨ë“  ìˆ«ìžë¥¼ ì†Œìˆ˜ê°€ ì•„ë‹ˆë¼ê³  ì¹˜í™˜
         		for( int b=2*a; b<=n; b+=a ) {
         			
         			array[b] = true;
@@ -36,7 +36,7 @@ public class A8{
     		}
     	}
     	
-    	// 2ºÎÅÍ N±îÁöÀÇ ¸ðµç ¼Ò¼ö Ãâ·Â
+    	// 2ë¶€í„° Nê¹Œì§€ì˜ ëª¨ë“  ì†Œìˆ˜ ì¶œë ¥
     	for( int a=2; a<=n; a++ ) {
     	
     		if( array[a] != true ) { sb.append( a ).append( "\n" ); }
