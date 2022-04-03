@@ -16,7 +16,7 @@ public class A6{
     	char array2[] = new char[10];
     	double array3[] = new double[10];
     	
-    	// ¹è¿­ÀÇ ÃÊ±â°ª ¼³Á¤ for¹®º¸´Ù ºü¸§
+    	// ë°°ì—´ì˜ ì´ˆê¸°ê°’ ì„¤ì • forë¬¸ë³´ë‹¤ ë¹ ë¦„
     	Arrays.fill( array, -1 );
     	Arrays.fill( array2, 'a' );
     	Arrays.fill( array3, 0.5 );
