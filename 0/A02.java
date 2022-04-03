@@ -15,10 +15,10 @@ public class A2 {
     	
     	for( int i=1; i<=input1; i++ ) {
     		
-    		// BufferedWriter ·Î intÇüÀ» Ãâ·ÂÇÏ±â À§ÇØ¼­´Â
+    		// BufferedWriter ë¡œ intí˜•ì„ ì¶œë ¥í•˜ê¸° ìœ„í•´ì„œëŠ”
     		// 1. String.valueOf( i );
-    		// 2. StringBuffer sb1; ¸¦ sb1.toString();
-    		// 3. intÇü + ¹®ÀÚÇü = ¹®ÀÚÇü À» ÀÌ¿ë
+    		// 2. StringBuffer sb1; ë¥¼ sb1.toString();
+    		// 3. intí˜• + ë¬¸ìží˜• = ë¬¸ìží˜• ì„ ì´ìš©
     		bw.write( i + "\n" );
     	}
 
