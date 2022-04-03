@@ -20,8 +20,8 @@ public class A3{
     		
     		input = in.readLine();
 
-    		// ÀĞ¾î¿Â StringÀ» ÇÑ±ÛÀÚ¾¿ ³ª´©´Â ÇÔ¼ö charAt()À» »ç¿ëÇØ¼­ ÇÑ±ÛÀÚ ¾¿ ºñ±³
-    		// 0ºÎÅÍ input °ªÀÇ ±æÀÌ¸¸Å­
+    		// ì½ì–´ì˜¨ Stringì„ í•œê¸€ìì”© ë‚˜ëˆ„ëŠ” í•¨ìˆ˜ charAt()ì„ ì‚¬ìš©í•´ì„œ í•œê¸€ì ì”© ë¹„êµ
+    		// 0ë¶€í„° input ê°’ì˜ ê¸¸ì´ë§Œí¼
     		for( int b=0; b<input.length(); b++ ) {
     			
     			if( input.charAt(b) == 'O' ) {
