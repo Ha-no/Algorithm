@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.Arrays;
 
-public class A6{
+public class A06{
     public static void main(String[] args) throws Exception{
 
     	BufferedReader in = new BufferedReader( new InputStreamReader( System.in ) );
