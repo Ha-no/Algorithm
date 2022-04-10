@@ -18,7 +18,8 @@ public class A1{
     	StringTokenizer st = new StringTokenizer( br.readLine() );
     	// 문자열을 나눌 때 사용자가 지정한 문자/문자열로 나누게 됨
     	StringTokenizer st1 = new StringTokenizer( br.readLine(), "T" );
-    	// 문자열을 나눌 때 사용자가 지정한 문자/문자열을 나누고 기본 구분자들로도 나눌지를 true/false로 적용하여 나누게 됨
+    	// 문자열을 나눌 때 사용자가 지정한 문자/문자열을 나누고 기본 구분자들도 나눌지를 true/false로 적용하여 나누게 됨
+        // ex) aTbTcT입력시 >> True일때 : a T b T c  / False일때 : a b c
     	StringTokenizer st2 = new StringTokenizer( br.readLine(), "T", true );
     	
     	// 문자열로 읽은 내용을 int형으로 형변환
