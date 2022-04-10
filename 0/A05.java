@@ -5,7 +5,7 @@ import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
-public class A5{
+public class A05{
 	
 	static int fct( int n ) {
 		
