@@ -5,7 +5,7 @@ import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
-public class A9{
+public class A09{
     public static void main(String[] args) throws Exception{
 
     	BufferedReader in = new BufferedReader( new InputStreamReader( System.in ) );
