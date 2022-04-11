@@ -1,0 +1,79 @@
+Math.~ 함수
+
+static double random()
+	= 0.0 이상 1.0 미만의 범위에서 임의의 double형 값 생성해 반환
+
+static double abs( double a / float a / int a / long a )
+	= 절대값을 반환
+
+static double ceil( double a )
+	= 전달된 값의 소수 부분이 존재하면 소수부분을 무조건 올리고 반환
+	
+static double floor( double a )
+	= 전달된 값의 소수 부분이 존재하면 솟부분을 무조건 버리고 반환
+	
+static long round( double a )
+static int round( float a )
+	= 전잘된 값을 소수점 첫째 자리에서 반올림한 정수를 반환
+
+static double rind( double a )
+	= 전달된 값과 가장 가까운 정수값을 double형으로 반환
+	
+static double max( double a, double b )
+static float max( float a, float b )
+static long max( long a, long b )
+static int max( int a, int b )
+	= 전달된 두 값중 큰 값을 반환
+
+static double min( double a, double b )
+static float min( float a, float b )
+static long min( long a, long b )
+static int min( int a, int b )
+	= 전달된 두 값중 작은 값을 반환
+
+static double pow( double a, double b )
+	= 전달된 두 값을 가지고 제곱연산을 수행 a^b
+
+static double sin( double a )
+static double cos( double a )
+static double tan( double a )
+	= 삼각함수
+
+static double toDegrees( double angrad )
+	= 라디안 값을 각도로 변환
+	
+static double toRadians( double angdeg)
+	= 각도를 라디안으로 변환
+
+
+
+Arrays.~ 함수
+
+
+static <T> List<T> asList(T... a)
+	= 배열을 ArrayList로 변환
+
+static String toString( Object[] a )
+	= 배열을 string값으로 반환
+
+static void sort( Object[] a )
+	= 배열을 오름차순으로 정리
+
+static void sort( Object[] a, int fromindex, int toindex)
+	= 시작( fromindex ), 끝( toindex - 1 ) 지점을 지정해 지정한 범위만 오름차순 정렬
+
+static void sort( String[] a, Collections.reverseOrder() )
+	= 문자형 배열을 내림차순으로 정리
+
+static void sort( Strig[] a, int fromindex, int toindex, Collections.reverseOrder() )
+	= 시작( fromindex ), 끝( toindex - 1 ) 지점을 지정해 문자열 배열에 지정한 범위만 오름차순 정렬
+
+static Object[] copyOf( Object[] a, int newlength )
+	= 배열 a의 인덱스 0 부터 newlength의 길이 만큼 복사
+
+static Object[] copyOfRange( Object[] a, int from, int to )
+	= 배열 a의 인덱스 from부터 to-1 까지 복사
+
+static void fill( Object[] a, Object val )
+	= 전달받은 배열의 모든 요소를 특정 값으로 초기화
+
