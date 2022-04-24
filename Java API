@@ -18,7 +18,7 @@ static double floor( double a )
 	
 static long round( double a )
 static int round( float a )
-	= 전잘된 값을 소수점 첫째 자리에서 반올림한 정수를 반환
+	= 전된 값을 소수점 첫째 자리에서 반올림한 정수를 반환
 
 static double rind( double a )
 	= 전달된 값과 가장 가까운 정수값을 double형으로 반환
