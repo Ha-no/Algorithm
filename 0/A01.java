@@ -45,3 +45,6 @@ public class A01{
     }
 }
 
+/*
+    https://www.acmicpc.net/problem/15552
+*/
