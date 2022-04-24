@@ -61,13 +61,13 @@ static String toString( Object[] a )
 	= 배열을 string값으로 반환
 
 static void sort( Object[] a )
-	= 배열을 오름차순으로 정리
+	= 배열을 오름차순으로 정렬
 
 static void sort( Object[] a, int fromindex, int toindex)
 	= 시작( fromindex ), 끝( toindex - 1 ) 지점을 지정해 지정한 범위만 오름차순 정렬
 
 static void sort( String[] a, Collections.reverseOrder() )
-	= 문자형 배열을 내림차순으로 정리
+	= 문자형 배열을 내림차순으로 정렬
 
 static void sort( Strig[] a, int fromindex, int toindex, Collections.reverseOrder() )
 	= 시작( fromindex ), 끝( toindex - 1 ) 지점을 지정해 문자열 배열에 지정한 범위만 내림차순 정렬
