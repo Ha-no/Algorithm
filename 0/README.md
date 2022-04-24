@@ -1,7 +1,7 @@
 A01 = BufferedReader / BufferedWriter 를 이용한 빠른 입출력 ( 15552 )  
 A02 = BufferedWriter를 이용해 int형 출력  
 A03 = charAt() 을 이용해 String을 한글자 씩  
-A04 = 셀프넘버 구하기  
+A04 = 셀프넘버 구하기 ( 4673 )  
 A05 = 한수 구하기  
 A06 = for문 없이 배열의 초기값 설정  
 A07 = 벌집  
