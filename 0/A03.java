@@ -1,7 +1,10 @@
 
+
 /*
-	풀이 노션 : https://www.notion.so/charAt-8d26f12ccf544a05b6b292115964438f
+	문제 : https://www.acmicpc.net/problem/1065
+	풀이 노션 : https://www.notion.so/e38ece7655884e53b2e3cdc4f4d0eb64
 */
+
 
 package Algorithm;
 
@@ -11,36 +14,36 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
 public class A03{
+	
+	static int fct( int n ) {
+		
+		int count = 99, cal1 = 0, cal2 = 0, cal3 = 0;
+		
+		// 1000은 한수가 아니므로 999가 입력되었다고 봐도 무방
+		if( n == 1000 ) { n = 999; }
+		
+		for( int a=100; a<=n; a++ ) {
+
+			cal1 = a % 10;
+			cal2 = ( a / 10 ) % 10;
+			cal3 = ( ( a / 10 ) / 10 ) % 10;
+			
+			if( cal1 - cal2 == cal2 - cal3 ) { count++; }
+		}
+
+		return count;
+	}
+	
     public static void main(String[] args) throws Exception{
 
     	BufferedReader in = new BufferedReader( new InputStreamReader( System.in ) );
     	BufferedWriter out = new BufferedWriter( new OutputStreamWriter( System.out ) );
-    	
-    	int n = Integer.parseInt( in.readLine() );
-    	int array[] = new int[n];
-    	int count = 0;
-    	String input = null;
-    	
-    	for( int a=0; a<n; a++ ) {
-    		
-    		input = in.readLine();
 
-    		// 읽어온 String을 한글자씩 나누는 함수 charAt()을 사용해서 한글자 씩 비교
-    		// 0부터 input 값의 길이만큼
-    		for( int b=0; b<input.length(); b++ ) {
-    			
-    			if( input.charAt(b) == 'O' ) {
-    				count++;
-    				array[a] += count;
-    			}else {
-    				count = 0;
-    			}
-    		}
-    		count = 0;
-    	}
+    	int input = Integer.parseInt( in.readLine() );
     	
-    	for( int a=0; a<n; a++ ) {
-    		out.write( array[a] + "\n" );
+    	if( input < 100 ) { out.write( input + "" ); }
+    	else {
+    		out.write( fct( input ) + "" );
     	}
     	
     	out.flush();

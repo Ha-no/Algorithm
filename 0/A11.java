@@ -1,77 +1,60 @@
 
 /*
-	문제 : https://www.acmicpc.net/problem/1018
-	플이 노션 : https://www.notion.so/f9468c6bbb4c4d988c05acc81d0862de
+	문제 : https://www.acmicpc.net/problem/1002
+	풀이 노션 : https://www.notion.so/f35d5feb8d774e2aaa96b995618f48cc
 */
 
 package Algorithm;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
 public class A11{
 	
     public static void main(String[] args) throws Exception{
-    	
+
     	BufferedReader in = new BufferedReader( new InputStreamReader( System.in ) );
-    	StringTokenizer st = new StringTokenizer( in.readLine() );
+    	BufferedWriter out = new BufferedWriter( new OutputStreamWriter( System.out ) );
+    	StringTokenizer st = null;
     	
-    	int n = Integer.parseInt( st.nextToken() );
-    	int m = Integer.parseInt( st.nextToken() );
-    	
-    	int array[][] = new int[n][m];
-    	String input;
     	StringBuilder output = new StringBuilder();
+    	
+    	int n = Integer.parseInt( in.readLine() );
+    	
+    	int x1 = 0, x2 = 0, y1 = 0, y2 = 0, r1 = 0, r2 = 0;
+    	double range = 0;
     	
     	for( int a=0; a<n; a++ ) {
     		
-    		input = in.readLine();
+    		st = new StringTokenizer( in.readLine() );
     		
-    		for( int b=0; b<m; b++ ) {
-    			
-    			array[a][b] = input.charAt( b ); 
-    		}
+    		x1 = Integer.parseInt( st.nextToken() );
+    		y1 = Integer.parseInt( st.nextToken() );
+    		r1 = Integer.parseInt( st.nextToken() );
+    		x2 = Integer.parseInt( st.nextToken() );
+    		y2 = Integer.parseInt( st.nextToken() );
+    		r2 = Integer.parseInt( st.nextToken() );
+
+    		range = (Math.pow( ( x2 - x1 ) , 2 ) + Math.pow( ( y2 - y1 ), 2 ));
+
+    		
+    		if( x1 == x2 && y1 == y2 && r1 == r2 ) { output.append( -1 ); }
+    		else if( range < Math.pow( ( r2 - r1 ), 2 ) ) { output.append( 0 ); }
+    		else if( range > Math.pow( ( r1 + r2 ), 2 ) ) { output.append( 0 ); }
+    		else if( range == Math.pow( ( r2 - r1 ), 2) ) { output.append( 1 ); }
+    		else if( range == Math.pow( ( r1 + r2 ), 2 ) ) { output.append( 1 ); }
+    		else { output.append( 2 ); }
+        	
+        	output.append( "\n" );
     	}
-    	
-    	int check = 87, min = n * m, count = 0;
-    	
-    	for( int a=0; a<=(n-8); a++ ) {
-    		for( int b=0; b<=(m-8); b++ ) {
-    			
-    			for( int c=0; c<2; c++ ) {
-    				
-    				if( c == 0 ) { check = 66; }
-    				else { check = 87; }
-    				
-    				for( int x=a; x<(a+8); x++ ) {
-    					for( int y=b; y<(b+8); y++ ) {
-    						
-    						if( array[x][y] == check ) {
-    							
-    							count++;
-    							
-    							if( check == 87 ) { check = 66; }
-    							else { check = 87; }
-    						}
-    						else { check = array[x][y]; }
-    						
-    						if( ( y + 1 ) == ( b + 8 ) ) {
-    							if( check == 66 ) { check = 87; }
-    							else { check = 66; }
-    						}
-    					}
-    				}
-    				if( min > count ) { min = count; }
-    				count = 0;
-    			}
-    		}
-    	}
-    	
-    	output.append( min );
-    
-    	System.out.println( output );
-    	
+
+    	out.write( output.toString() );
+		
+    	out.flush();
+    	out.close();
     	in.close();
     }
 }

@@ -1,44 +1,60 @@
 
 /*
-	문제 : https://www.acmicpc.net/problem/11653
-	풀이 노션 : https://www.notion.so/785df55eab804e92ba5925f51a2f273a
+	문제 : https://www.acmicpc.net/problem/2609
+	풀이 노션 : https://www.notion.so/d7f4de2205ba44ec8cd0986efc49ef8e
 */
 
 package Algorithm;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
+import java.util.StringTokenizer;
 
 public class A09{
+	
     public static void main(String[] args) throws Exception{
-
+    	
     	BufferedReader in = new BufferedReader( new InputStreamReader( System.in ) );
-    	BufferedWriter out = new BufferedWriter( new OutputStreamWriter( System.out ) );
+    	StringTokenizer st = new StringTokenizer( in.readLine() );
     	
-    	StringBuffer sb = new StringBuffer();
-    	int n = Integer.parseInt( in.readLine() );
-
-    	// N을 2부터 나누는데 나누는 숫자가 루트 N까지만 계산해도 된다
-    	for( int a=2; a<=(int)Math.sqrt( n ); a++ ) {
+    	StringBuilder output = new StringBuilder();
+    	
+    	int first = Integer.parseInt( st.nextToken() );
+    	int second = Integer.parseInt( st.nextToken() );
+    	
+    	int max = fnc2( first, second );
+    	
+		// 최소 공배수
+    	int min = first * second / max;
+    	
+    	output.append( max ).append( "\n" ).append( min );
+    	
+    	System.out.println( output );
+    	
+    	in.close();    	
+    }
+    
+	// 최대 공약수 구하는 함수
+    // 방식 1 : 반복문
+    public static int fnc1( int a, int b ) {
+    	
+    	int box = 0;
+    	
+    	while( b != 0 ) {
     		
-    		// 나머지가 0이면 인수이므로 StringBuffer에 저장하고, N을 a로 나눈 몫으로 치환
-    		while( n % a == 0 ) {
-    			sb.append( a ).append( "\n" );
-    			n /= a;
-    		}
+    		box = a % b;
+	    	a = b;
+	    	b = box;
     	}
     	
-    	// 나머지가 1이 아니면 인수이므로 StringBuffer에 저장한다
-    	if( n != 1 ) {
-    		sb.append( n );
-    	}
+    	return a;
+    }
+    
+    // 방식 2 : 재귀
+    public static int fnc2( int a, int b ) {
     	
-    	out.write( sb.toString() );
+    	if( b == 0 ) { return a; }
     	
-    	out.flush();
-    	out.close();
-    	in.close();
+    	return fnc2( b, a % b );
     }
 }

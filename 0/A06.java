@@ -1,8 +1,8 @@
 
 /*
-	풀이 노션 : https://www.notion.so/for-x-6c8f8ac3fb964c3cb9ecdf154009104a
+	문제 : https://www.acmicpc.net/problem/6588
+	풀이 노션 : https://www.notion.so/1dc69bebd4534c109e8dce3c33c5eeb0
 */
-
 
 package Algorithm;
 
@@ -10,44 +10,59 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.util.Arrays;
 
 public class A06{
+	
+	public static boolean[] array = new boolean[20001];
+	
     public static void main(String[] args) throws Exception{
 
     	BufferedReader in = new BufferedReader( new InputStreamReader( System.in ) );
     	BufferedWriter out = new BufferedWriter( new OutputStreamWriter( System.out ) );
 
-    	int array[] = new int[10];
-    	char array2[] = new char[10];
-    	double array3[] = new double[10];
+    	StringBuffer sb = new StringBuffer();
     	
-    	// 배열의 초기값 설정 for문보다 빠름
-    	Arrays.fill( array, -1 );
-    	Arrays.fill( array2, 'a' );
-    	Arrays.fill( array3, 0.5 );
+    	prime();
     	
-    	for( int a=0; a<array.length; a++ ) {
+    	int t = Integer.parseInt( in.readLine() );
+    	
+    	while( t-- > 0 ) {
     		
-    		out.write( array[a] + " " );
-    	}
-
-    	out.write( "\n" );
-    	
-    	for( int a=0; a<array2.length; a++ ) {
+    		int n = Integer.parseInt( in.readLine() );
+    		int first = n/2, second = n/2;
     		
-    		out.write( array2[a] + " " );
-    	}
-
-    	out.write( "\n" );
-    	
-    	for( int a=0; a<array3.length; a++ ) {
+    		while( true ) {
+    			if( !array[first] && !array[second] ) {
+        		
+        			sb.append( first ).append( " " ).append( second ).append( "\n" );
+        			break;
+        		}
+    			first--;
+    			second++;
+    		}
     		
-    		out.write( array3[a] + " " );
     	}
+    	
+    	out.write( sb.toString() );
     	
     	out.flush();
     	out.close();
     	in.close();
+    }
+    
+    public static void prime() {
+    	
+    	array[0] = array[1] = true;
+    	
+    	for( int a=2; a<=Math.sqrt( array.length ); a++ ) {
+    		
+    		if( !array[a] ) {
+    			
+    			for( int b=a*a; b<array.length; b+=a ) {
+    				
+    				array[b] = true;
+    			}
+    		}
+    	}
     }
 }

@@ -1,10 +1,8 @@
 
-
 /*
-	문제 : https://www.acmicpc.net/problem/1065
-	풀이 노션 : https://www.notion.so/e38ece7655884e53b2e3cdc4f4d0eb64
+	문제 : https://www.acmicpc.net/problem/11653
+	풀이 노션 : https://www.notion.so/785df55eab804e92ba5925f51a2f273a
 */
-
 
 package Algorithm;
 
@@ -14,37 +12,30 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
 public class A05{
-	
-	static int fct( int n ) {
-		
-		int count = 99, cal1 = 0, cal2 = 0, cal3 = 0;
-		
-		// 1000은 한수가 아니므로 999가 입력되었다고 봐도 무방
-		if( n == 1000 ) { n = 999; }
-		
-		for( int a=100; a<=n; a++ ) {
-
-			cal1 = a % 10;
-			cal2 = ( a / 10 ) % 10;
-			cal3 = ( ( a / 10 ) / 10 ) % 10;
-			
-			if( cal1 - cal2 == cal2 - cal3 ) { count++; }
-		}
-
-		return count;
-	}
-	
     public static void main(String[] args) throws Exception{
 
     	BufferedReader in = new BufferedReader( new InputStreamReader( System.in ) );
     	BufferedWriter out = new BufferedWriter( new OutputStreamWriter( System.out ) );
-
-    	int input = Integer.parseInt( in.readLine() );
     	
-    	if( input < 100 ) { out.write( input + "" ); }
-    	else {
-    		out.write( fct( input ) + "" );
+    	StringBuffer sb = new StringBuffer();
+    	int n = Integer.parseInt( in.readLine() );
+
+    	// N을 2부터 나누는데 나누는 숫자가 루트 N까지만 계산해도 된다
+    	for( int a=2; a<=(int)Math.sqrt( n ); a++ ) {
+    		
+    		// 나머지가 0이면 인수이므로 StringBuffer에 저장하고, N을 a로 나눈 몫으로 치환
+    		while( n % a == 0 ) {
+    			sb.append( a ).append( "\n" );
+    			n /= a;
+    		}
     	}
+    	
+    	// 나머지가 1이 아니면 인수이므로 StringBuffer에 저장한다
+    	if( n != 1 ) {
+    		sb.append( n );
+    	}
+    	
+    	out.write( sb.toString() );
     	
     	out.flush();
     	out.close();

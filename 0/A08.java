@@ -1,56 +1,82 @@
 
 /*
-	풀이 노션 : https://www.notion.so/N-58b6025ca00147ad84148f581b7a928a
+	문제 : https://www.acmicpc.net/problem/2108
+	풀이 노션 : https://www.notion.so/3c748f47f4954cd3ac2064826b52208f
 */
 
 package Algorithm;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 
 public class A08{
+	
     public static void main(String[] args) throws Exception{
-
-    	BufferedReader in = new BufferedReader( new InputStreamReader( System.in ) );
-    	BufferedWriter out = new BufferedWriter( new OutputStreamWriter( System.out ) );
-
-    	StringBuffer sb = new StringBuffer();
     	
-    	// N을 입력 받아 N까지의 수 중에 소수를 찾는다
+    	BufferedReader in = new BufferedReader( new InputStreamReader( System.in ) );
+
+    	StringBuilder output = new StringBuilder();
+    	
     	int n = Integer.parseInt( in.readLine() );
     	
-    	// N개의 공간이 있는 배열 생성 ( True = 소수X / False = 소수 )
-    	boolean array[] = new boolean[ n + 1 ];
+    	int input = 0, max = 0, rmax = 0, rmin = 8001, idx = 0, flag = 0, mflag = 0;
+    	int avg = 0, median = 0, mode = 0, range = 0, count = 0;
     	
-    	// 루트 N * 2 > N 이므로 루트 N보다 작은 수의 배수로만 계산해도 충분하다
-    	int check = (int)Math.sqrt( n );
+    	int check[] = new int[ 80001 ];
     	
-    	// 2부터 시작하여 루트 N까지의 배수들을 배열에서 False로 치환 
-    	for( int a=2; a<=check; a++ ) {
+    	for( int a=0; a<n; a++ ) {
+    		input = Integer.parseInt( in.readLine() );
     		
-    		// array[a]가 소수가 아니면
-    		if( !array[a] ) {
+    		check[ input + 4000 ]++;
+    		avg += input;
+    	}
+    	
+    	for( int a=0; a<check.length; a++ ) {
+    		
+    		if( check[a] > 0 ) {
     			
-    			// a의 배수의 모든 숫자를 소수가 아니라고 치환
-        		for( int b=2*a; b<=n; b+=a ) {
-        			
-        			array[b] = true;
-        		}
+    			count += check[a];
+    			
+    			// 중앙값
+    			if( mflag == 0 ) {
+    				if( count >= Math.round( (double)n / 2 ) ) {
+        				median = a - 4000;
+        				mflag++;
+        			}
+    			}
+    			
+    			// 최빈값
+    			if( idx == check[a] ) {
+    				idx = check[a];
+    				max = a - 4000;
+    				flag++;
+    				if( flag == 1 ) { mode = max; }
+    				
+    			} else if( idx < check[a] ) {
+    				idx = check[a];
+    				max = a - 4000;
+    				flag = 0;
+    			}
+    			
+    			// 범위 계산을 위한 max / min
+    			if( rmin > a ) { rmin = a - 4000; }
+    			if( rmax < a ) { rmax = a - 4000; }
     		}
     	}
+
+    	// 평균
+    	avg = Math.round( avg / (float)n );
     	
-    	// 2부터 N까지의 모든 소수 출력
-    	for( int a=2; a<=n; a++ ) {
+    	range = rmax - rmin;
+
+    	if( flag == 0 ) { mode = max; }
     	
-    		if( array[a] != true ) { sb.append( a ).append( "\n" ); }
-    	}
+    	output.append( avg ).append( "\n" ).append( median ).append( "\n" );
+
+    	output.append( mode ).append( "\n" ).append( range );
     	
-    	out.write( sb.toString() );
+    	System.out.println( output );
     	
-    	out.flush();
-    	out.close();
-    	in.close();
+    	in.close();    	
     }
 }

@@ -1,68 +1,98 @@
 
 /*
-	문제 : https://www.acmicpc.net/problem/6588
-	풀이 노션 : https://www.notion.so/1dc69bebd4534c109e8dce3c33c5eeb0
+	문제 : https://www.acmicpc.net/problem/2981
+	풀이 노션 : https://www.notion.so/f85b8cb1a0c24e7bb21c9bf62668ef00
 */
 
 package Algorithm;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 
 public class A10{
 	
-	public static boolean[] array = new boolean[20001];
+	static int n;
+	static int array[];
 	
     public static void main(String[] args) throws Exception{
-
-    	BufferedReader in = new BufferedReader( new InputStreamReader( System.in ) );
-    	BufferedWriter out = new BufferedWriter( new OutputStreamWriter( System.out ) );
-
-    	StringBuffer sb = new StringBuffer();
     	
-    	prime();
+    	input();
+    	solve();
     	
-    	int t = Integer.parseInt( in.readLine() );
+    }
+    
+    // 최대 공약수 함수
+    static int fnc( int a, int b ) {
     	
-    	while( t-- > 0 ) {
+    	while( b != 0 ) {
     		
-    		int n = Integer.parseInt( in.readLine() );
-    		int first = n/2, second = n/2;
-    		
-    		while( true ) {
-    			if( !array[first] && !array[second] ) {
-        		
-        			sb.append( first ).append( " " ).append( second ).append( "\n" );
-        			break;
-        		}
-    			first--;
-    			second++;
-    		}
-    		
+    		int box = a % b;
+    		a = b;
+    		b = box;
     	}
     	
-    	out.write( sb.toString() );
+    	return a;
+    }
+    
+    // 입력 함수
+    static void input() throws Exception {
+
+    	BufferedReader in = new BufferedReader( new InputStreamReader( System.in ) );
     	
-    	out.flush();
-    	out.close();
+    	n = Integer.parseInt( in.readLine() );
+    	array = new int [n];
+    	
+    	for( int a=0; a<n; a++ ) {
+    		array[a] = Integer.parseInt( in.readLine() );
+    	}
+    	
     	in.close();
     }
     
-    public static void prime() {
+    // 해결 함수
+    static void solve() {
     	
-    	array[0] = array[1] = true;
+    	ArrayList<Integer> list = new ArrayList<Integer>();
+    	StringBuilder output = new StringBuilder();
     	
-    	for( int a=2; a<=Math.sqrt( array.length ); a++ ) {
+    	int max = 0;
+    	
+    	// Math.abs()를 생략하기 위해 정렬
+    	Arrays.sort( array );
+    	
+    	max = array[1] - array[0];
+    	
+    	// 0-1 / 1-2 / 2-3 / ... 의 값들의 최대 공약수 구하기
+    	for( int a=2; a<n; a++ ) {
+
+    		max = fnc( max, array[a] - array[a-1] );
+    	}
+    	
+    	// 최대 공약수의 공약수 구하기
+    	// 공약수는 루트n을 넘지 않으므로 Math.sqrt() 사용
+    	for( int a=2; a<=Math.sqrt( max ); a++ ) {
     		
-    		if( !array[a] ) {
-    			
-    			for( int b=a*a; b<array.length; b+=a ) {
-    				
-    				array[b] = true;
-    			}
+    		// 중복방지를 위해 제곱근은 따로 처리
+    		if( a * a == max ) { list.add( a ); }
+    		// 약수 모두 삽입
+    		// 삽입시 a뿐만 아니라 a로 나눈 몫도 삽입
+    		else if( max % a == 0 ) {
+    			list.add( a );
+    			list.add( max / a );
     		}
     	}
+
+    	// ArrayList<>() 정렬
+    	Collections.sort( list );
+    	
+    	for( int a : list ) {
+    		output.append( a ).append( " " );
+    	}
+    	output.append( max );
+    	
+    	System.out.println( output );
     }
 }
