@@ -1,3 +1,12 @@
+
+
+
+
+/*	
+	¹®Á¦ : https://www.acmicpc.net/problem/15552
+	Ç®ÀÌ ³ë¼Ç : https://www.notion.so/5bc82b0dba0949c6a4db69371b1ad65b
+*/
+
 package Algorithm;
 
 import java.io.BufferedReader;
@@ -9,31 +18,31 @@ import java.util.StringTokenizer;
 public class A01{
     public static void main(String[] args) throws Exception{
 
-    	// ì…ë ¥
+    	// ÀÔ·Â
     	BufferedReader br = new BufferedReader( new InputStreamReader( System.in ) );
-    	// ì¶œë ¥
+    	// Ãâ·Â
     	BufferedWriter bw = new BufferedWriter( new OutputStreamWriter( System.out ) );
     	
-    	// ë¬¸ìì—´ì„ ë‚˜ëˆ„ê²Œ ë˜ëŠ”ë° Defaultê°’ì€ ê³µë°±/íƒ­/ì¤„ë°”ê¿ˆ ë“± ê¸°ë³¸ êµ¬ë¶„ìê°€ ì ìš©ë˜ì–´ ë‚˜ëˆ„ê²Œ ë¨
+    	// ¹®ÀÚ¿­À» ³ª´©°Ô µÇ´Âµ¥ Default°ªÀº °ø¹é/ÅÇ/ÁÙ¹Ù²Ş µî ±âº» ±¸ºĞÀÚ°¡ Àû¿ëµÇ¾î ³ª´©°Ô µÊ
     	StringTokenizer st = new StringTokenizer( br.readLine() );
-    	// ë¬¸ìì—´ì„ ë‚˜ëˆŒ ë•Œ ì‚¬ìš©ìê°€ ì§€ì •í•œ ë¬¸ì/ë¬¸ìì—´ë¡œ ë‚˜ëˆ„ê²Œ ë¨
+    	// ¹®ÀÚ¿­À» ³ª´­ ¶§ »ç¿ëÀÚ°¡ ÁöÁ¤ÇÑ ¹®ÀÚ/¹®ÀÚ¿­·Î ³ª´©°Ô µÊ
     	StringTokenizer st1 = new StringTokenizer( br.readLine(), "T" );
-    	// ë¬¸ìì—´ì„ ë‚˜ëˆŒ ë•Œ ì‚¬ìš©ìê°€ ì§€ì •í•œ ë¬¸ì/ë¬¸ìì—´ì„ ë‚˜ëˆ„ê³  ê¸°ë³¸ êµ¬ë¶„ìë“¤ë„ ë‚˜ëˆŒì§€ë¥¼ true/falseë¡œ ì ìš©í•˜ì—¬ ë‚˜ëˆ„ê²Œ ë¨
-        // ex) aTbTcTì…ë ¥ì‹œ >> Trueì¼ë•Œ : a T b T c  / Falseì¼ë•Œ : a b c
+    	// ¹®ÀÚ¿­À» ³ª´­ ¶§ »ç¿ëÀÚ°¡ ÁöÁ¤ÇÑ ¹®ÀÚ/¹®ÀÚ¿­À» ³ª´©°í ±âº» ±¸ºĞÀÚµéµµ ³ª´­Áö¸¦ true/false·Î Àû¿ëÇÏ¿© ³ª´©°Ô µÊ
+        // ex) aTbTcTÀÔ·Â½Ã >> TrueÀÏ¶§ : a T b T c  / FalseÀÏ¶§ : a b c
     	StringTokenizer st2 = new StringTokenizer( br.readLine(), "T", true );
     	
-    	// ë¬¸ìì—´ë¡œ ì½ì€ ë‚´ìš©ì„ intí˜•ìœ¼ë¡œ í˜•ë³€í™˜
+    	// ¹®ÀÚ¿­·Î ÀĞÀº ³»¿ëÀ» intÇüÀ¸·Î Çüº¯È¯
     	int input1 = Integer.parseInt( st.nextToken() );
     	int input2 = 0, input3 = 0;
     	
-    	// ë©”ëª¨ë¦¬ ì‚¬ìš©ì„ ì¤„ì´ê¸° ìœ„í•œ StringBuffer
+    	// ¸Ş¸ğ¸® »ç¿ëÀ» ÁÙÀÌ±â À§ÇÑ StringBuffer
     	StringBuffer sb1 = new StringBuffer();
     	
     	for( int i=0; i<input1; i++ ) {
     		
-    		// ì¤„ë°”ê¿”ì„œ ì…ë ¥í•  ë•Œ ë§ˆë‹¤ ì¬ ì„ ì–¸
+    		// ÁÙ¹Ù²ã¼­ ÀÔ·ÂÇÒ ¶§ ¸¶´Ù Àç ¼±¾ğ
     		st = new StringTokenizer( br.readLine() );
-            // StringTokenizerë¡œ ë‚˜ëˆˆ í† í°ë“¤ì„ ì°¨ë¡€ëŒ€ë¡œ ì‚¬ìš©
+            // StringTokenizer·Î ³ª´« ÅäÅ«µéÀ» Â÷·Ê´ë·Î »ç¿ë
     		input2 = Integer.parseInt( st.nextToken() );
     		input3 = Integer.parseInt( st.nextToken() );
     		sb1.append( input2 + input3 ).append( "\n" );
@@ -44,7 +53,3 @@ public class A01{
     	br.close();
     }
 }
-
-/*
-    https://www.acmicpc.net/problem/15552
-*/

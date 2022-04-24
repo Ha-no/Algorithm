@@ -1,3 +1,8 @@
+
+/*
+	Ç®ÀÌ ³ë¼Ç : https://www.notion.so/charAt-8d26f12ccf544a05b6b292115964438f
+*/
+
 package Algorithm;
 
 import java.io.BufferedReader;
@@ -20,8 +25,8 @@ public class A03{
     		
     		input = in.readLine();
 
-    		// ì½ì–´ì˜¨ Stringì„ í•œê¸€ìì”© ë‚˜ëˆ„ëŠ” í•¨ìˆ˜ charAt()ì„ ì‚¬ìš©í•´ì„œ í•œê¸€ì ì”© ë¹„êµ
-    		// 0ë¶€í„° input ê°’ì˜ ê¸¸ì´ë§Œí¼
+    		// ÀĞ¾î¿Â StringÀ» ÇÑ±ÛÀÚ¾¿ ³ª´©´Â ÇÔ¼ö charAt()À» »ç¿ëÇØ¼­ ÇÑ±ÛÀÚ ¾¿ ºñ±³
+    		// 0ºÎÅÍ input °ªÀÇ ±æÀÌ¸¸Å­
     		for( int b=0; b<input.length(); b++ ) {
     			
     			if( input.charAt(b) == 'O' ) {
@@ -43,4 +48,3 @@ public class A03{
     	in.close();
     }
 }
-

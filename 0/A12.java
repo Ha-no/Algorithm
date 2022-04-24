@@ -1,11 +1,15 @@
+
+/*
+	문제 : https://www.acmicpc.net/problem/2108
+	풀이 노션 : https://www.notion.so/3c748f47f4954cd3ac2064826b52208f
+*/
+
 package Algorithm;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 public class A12{
-	
-	public static boolean[] array = new boolean[20001];
 	
     public static void main(String[] args) throws Exception{
     	
@@ -76,7 +80,3 @@ public class A12{
     	in.close();    	
     }
 }
-
-/*
-	https://www.acmicpc.net/problem/2108
-*/

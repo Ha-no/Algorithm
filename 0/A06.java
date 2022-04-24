@@ -1,3 +1,9 @@
+
+/*
+	Ç®ÀÌ ³ë¼Ç : https://www.notion.so/for-x-6c8f8ac3fb964c3cb9ecdf154009104a
+*/
+
+
 package Algorithm;
 
 import java.io.BufferedReader;
@@ -16,7 +22,7 @@ public class A06{
     	char array2[] = new char[10];
     	double array3[] = new double[10];
     	
-    	// ë°°ì—´ì˜ ì´ˆê¸°ê°’ ì„¤ì • forë¬¸ë³´ë‹¤ ë¹ ë¦„
+    	// ¹è¿­ÀÇ ÃÊ±â°ª ¼³Á¤ for¹®º¸´Ù ºü¸§
     	Arrays.fill( array, -1 );
     	Arrays.fill( array2, 'a' );
     	Arrays.fill( array3, 0.5 );

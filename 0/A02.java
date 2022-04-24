@@ -1,3 +1,8 @@
+
+/*
+	«Æ¿Ã ≥Îº« : https://www.notion.so/BufferedWriter-int-9eedcb628f784eccbe1377fee9d2f6c6
+*/
+
 package Algorithm;
 
 import java.io.BufferedReader;
@@ -15,10 +20,10 @@ public class A02 {
     	
     	for( int i=1; i<=input1; i++ ) {
     		
-    		// BufferedWriter Î°ú intÌòïÏùÑ Ï∂úÎ†•ÌïòÍ∏∞ ÏúÑÌï¥ÏÑúÎäî
+    		// BufferedWriter ∑Œ int«¸¿ª √‚∑¬«œ±‚ ¿ß«ÿº≠¥¬
     		// 1. String.valueOf( i );
-    		// 2. StringBuffer sb1; Î•º sb1.toString();
-    		// 3. intÌòï + Î¨∏ÏûêÌòï = Î¨∏ÏûêÌòï ÏùÑ Ïù¥Ïö©
+    		// 2. StringBuffer sb1; ∏¶ sb1.toString();
+    		// 3. int«¸ + πÆ¿⁄«¸ = πÆ¿⁄«¸ ¿ª ¿ÃøÎ
     		bw.write( i + "\n" );
     	}
 
@@ -27,4 +32,3 @@ public class A02 {
     	br.close();
     }
 }
-

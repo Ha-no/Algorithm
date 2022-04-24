@@ -1,3 +1,9 @@
+
+/*
+	문제 : https://www.acmicpc.net/problem/2981
+	풀이 노션 : https://www.notion.so/f85b8cb1a0c24e7bb21c9bf62668ef00
+*/
+
 package Algorithm;
 
 import java.io.BufferedReader;
@@ -90,30 +96,3 @@ public class A14{
     	System.out.println( output );
     }
 }
-
-/*
-	A1 = a * b1 + r1
-	A2 = a * b2 + r2
-	A3 = a * b3 + r3
-	
-	
-	A1 - A2 = a * ( b1 - b2 ) + ( r1- r2 )
-	
-	B1 = a * ( b1 - b2 )  -> A1, A2의 공약수
-	
-	
-	A2 - A3 = a * ( b2 - b3 ) + ( r2 - r3 )
-	
-	B2 = a * ( b2 - b3 )  -> A2,A3의 공약수
-	
-	
-	=== a = B1, B2의 공약수
-	
-	
-*/
-
-/*
-	https://www.acmicpc.net/status?user_id=gksdn1216&problem_id=2981&from_mine=1
- */
-
-

@@ -1,3 +1,9 @@
+
+/*
+	문제 : https://www.acmicpc.net/problem/1018
+	플이 노션 : https://www.notion.so/f9468c6bbb4c4d988c05acc81d0862de
+*/
+
 package Algorithm;
 
 import java.io.BufferedReader;
@@ -5,8 +11,6 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class A11{
-	
-	public static boolean[] array = new boolean[20001];
 	
     public static void main(String[] args) throws Exception{
     	
@@ -71,8 +75,3 @@ public class A11{
     	in.close();
     }
 }
-
-
-/*
-	https://www.acmicpc.net/problem/1018
-*/

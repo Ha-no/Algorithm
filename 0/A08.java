@@ -1,3 +1,8 @@
+
+/*
+	Ç®ÀÌ ³ë¼Ç : https://www.notion.so/N-58b6025ca00147ad84148f581b7a928a
+*/
+
 package Algorithm;
 
 import java.io.BufferedReader;
@@ -13,22 +18,22 @@ public class A08{
 
     	StringBuffer sb = new StringBuffer();
     	
-    	// Nì„ ìž…ë ¥ ë°›ì•„ Nê¹Œì§€ì˜ ìˆ˜ ì¤‘ì— ì†Œìˆ˜ë¥¼ ì°¾ëŠ”ë‹¤
+    	// NÀ» ÀÔ·Â ¹Þ¾Æ N±îÁöÀÇ ¼ö Áß¿¡ ¼Ò¼ö¸¦ Ã£´Â´Ù
     	int n = Integer.parseInt( in.readLine() );
     	
-    	// Nê°œì˜ ê³µê°„ì´ ìžˆëŠ” ë°°ì—´ ìƒì„± ( True = ì†Œìˆ˜X / False = ì†Œìˆ˜ )
+    	// N°³ÀÇ °ø°£ÀÌ ÀÖ´Â ¹è¿­ »ý¼º ( True = ¼Ò¼öX / False = ¼Ò¼ö )
     	boolean array[] = new boolean[ n + 1 ];
     	
-    	// ë£¨íŠ¸ N * 2 > N ì´ë¯€ë¡œ ë£¨íŠ¸ Në³´ë‹¤ ìž‘ì€ ìˆ˜ì˜ ë°°ìˆ˜ë¡œë§Œ ê³„ì‚°í•´ë„ ì¶©ë¶„í•˜ë‹¤
+    	// ·çÆ® N * 2 > N ÀÌ¹Ç·Î ·çÆ® Nº¸´Ù ÀÛÀº ¼öÀÇ ¹è¼ö·Î¸¸ °è»êÇØµµ ÃæºÐÇÏ´Ù
     	int check = (int)Math.sqrt( n );
     	
-    	// 2ë¶€í„° ì‹œìž‘í•˜ì—¬ ë£¨íŠ¸ Nê¹Œì§€ì˜ ë°°ìˆ˜ë“¤ì„ ë°°ì—´ì—ì„œ Falseë¡œ ì¹˜í™˜ 
+    	// 2ºÎÅÍ ½ÃÀÛÇÏ¿© ·çÆ® N±îÁöÀÇ ¹è¼öµéÀ» ¹è¿­¿¡¼­ False·Î Ä¡È¯ 
     	for( int a=2; a<=check; a++ ) {
     		
-    		// array[a]ê°€ ì†Œìˆ˜ê°€ ì•„ë‹ˆë©´
+    		// array[a]°¡ ¼Ò¼ö°¡ ¾Æ´Ï¸é
     		if( !array[a] ) {
     			
-    			// aì˜ ë°°ìˆ˜ì˜ ëª¨ë“  ìˆ«ìžë¥¼ ì†Œìˆ˜ê°€ ì•„ë‹ˆë¼ê³  ì¹˜í™˜
+    			// aÀÇ ¹è¼öÀÇ ¸ðµç ¼ýÀÚ¸¦ ¼Ò¼ö°¡ ¾Æ´Ï¶ó°í Ä¡È¯
         		for( int b=2*a; b<=n; b+=a ) {
         			
         			array[b] = true;
@@ -36,7 +41,7 @@ public class A08{
     		}
     	}
     	
-    	// 2ë¶€í„° Nê¹Œì§€ì˜ ëª¨ë“  ì†Œìˆ˜ ì¶œë ¥
+    	// 2ºÎÅÍ N±îÁöÀÇ ¸ðµç ¼Ò¼ö Ãâ·Â
     	for( int a=2; a<=n; a++ ) {
     	
     		if( array[a] != true ) { sb.append( a ).append( "\n" ); }

@@ -1,3 +1,9 @@
+
+/*
+	¹®Á¦ : https://www.acmicpc.net/problem/11653
+	Ç®ÀÌ ³ë¼Ç : https://www.notion.so/785df55eab804e92ba5925f51a2f273a
+*/
+
 package Algorithm;
 
 import java.io.BufferedReader;
@@ -14,17 +20,17 @@ public class A09{
     	StringBuffer sb = new StringBuffer();
     	int n = Integer.parseInt( in.readLine() );
 
-    	// Nì„ 2ë¶€í„° ë‚˜ëˆ„ëŠ”ë° ë‚˜ëˆ„ëŠ” ìˆ«ìê°€ ë£¨íŠ¸ Nê¹Œì§€ë§Œ ê³„ì‚°í•´ë„ ëœë‹¤
+    	// NÀ» 2ºÎÅÍ ³ª´©´Âµ¥ ³ª´©´Â ¼ıÀÚ°¡ ·çÆ® N±îÁö¸¸ °è»êÇØµµ µÈ´Ù
     	for( int a=2; a<=(int)Math.sqrt( n ); a++ ) {
     		
-    		// ë‚˜ë¨¸ì§€ê°€ 0ì´ë©´ ì¸ìˆ˜ì´ë¯€ë¡œ StringBufferì— ì €ì¥í•˜ê³ , Nì„ aë¡œ ë‚˜ëˆˆ ëª«ìœ¼ë¡œ ì¹˜í™˜
+    		// ³ª¸ÓÁö°¡ 0ÀÌ¸é ÀÎ¼öÀÌ¹Ç·Î StringBuffer¿¡ ÀúÀåÇÏ°í, NÀ» a·Î ³ª´« ¸òÀ¸·Î Ä¡È¯
     		while( n % a == 0 ) {
     			sb.append( a ).append( "\n" );
     			n /= a;
     		}
     	}
     	
-    	// ë‚˜ë¨¸ì§€ê°€ 1ì´ ì•„ë‹ˆë©´ ì¸ìˆ˜ì´ë¯€ë¡œ StringBufferì— ì €ì¥í•œë‹¤
+    	// ³ª¸ÓÁö°¡ 1ÀÌ ¾Æ´Ï¸é ÀÎ¼öÀÌ¹Ç·Î StringBuffer¿¡ ÀúÀåÇÑ´Ù
     	if( n != 1 ) {
     		sb.append( n );
     	}
