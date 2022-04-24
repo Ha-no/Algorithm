@@ -70,7 +70,7 @@ static void sort( String[] a, Collections.reverseOrder() )
 	= 문자형 배열을 내림차순으로 정리
 
 static void sort( Strig[] a, int fromindex, int toindex, Collections.reverseOrder() )
-	= 시작( fromindex ), 끝( toindex - 1 ) 지점을 지정해 문자열 배열에 지정한 범위만 오름차순 정렬
+	= 시작( fromindex ), 끝( toindex - 1 ) 지점을 지정해 문자열 배열에 지정한 범위만 내림차순 정렬
 
 static Object[] copyOf( Object[] a, int newlength )
 	= 배열 a의 인덱스 0 부터 newlength의 길이 만큼 복사
