@@ -1,5 +1,5 @@
 
-## Notion : [Notion Link](https://west-pineapple-c4d.notion.site/a12f064441fc47358158d33f0b89d8ee?v=6569da3780db49089eace0259cf0b444)
+## Notion : [ Link ](https://west-pineapple-c4d.notion.site/a12f064441fc47358158d33f0b89d8ee?v=6569da3780db49089eace0259cf0b444)
 
 001 - 빠른 입출력 ( 15552 )  
 002 - 셀프넘버 구하기 ( 4673 )  
