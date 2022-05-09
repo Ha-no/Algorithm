@@ -1,8 +1,8 @@
 
 
 /*
-	¹®Á¦ : https://www.acmicpc.net/problem/1065
-	Ç®ÀÌ ³ë¼Ç : https://www.notion.so/e38ece7655884e53b2e3cdc4f4d0eb64
+	ë¬¸ì œ : https://www.acmicpc.net/problem/1065
+	í’€ì´ ë…¸ì…˜ : https://www.notion.so/e38ece7655884e53b2e3cdc4f4d0eb64
 */
 
 
@@ -19,7 +19,7 @@ public class A03{
 		
 		int count = 99, cal1 = 0, cal2 = 0, cal3 = 0;
 		
-		// 1000Àº ÇÑ¼ö°¡ ¾Æ´Ï¹Ç·Î 999°¡ ÀÔ·ÂµÇ¾ú´Ù°í ºÁµµ ¹«¹æ
+		// 1000ì€ í•œìˆ˜ê°€ ì•„ë‹ˆë¯€ë¡œ 999ê°€ ì…ë ¥ë˜ì—ˆë‹¤ê³  ë´ë„ ë¬´ë°©
 		if( n == 1000 ) { n = 999; }
 		
 		for( int a=100; a<=n; a++ ) {
