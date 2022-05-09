@@ -1,9 +1,4 @@
 
-/*
-	문제 : https://www.acmicpc.net/problem/6588
-	풀이 노션 : https://www.notion.so/1dc69bebd4534c109e8dce3c33c5eeb0
-*/
-
 package Algorithm;
 
 import java.io.BufferedReader;
