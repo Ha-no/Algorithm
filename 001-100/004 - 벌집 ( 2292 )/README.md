@@ -36,8 +36,15 @@ Problem : [Problem Link](https://www.acmicpc.net/problem/2292)
 3
 </pre>
 
-## 풀이
+## 🌈풀이
 
-<pre style="background-color:orange;">
-test
+<pre>
+패턴을 찾아보니
+1  
+2 ~ 7  
+8 ~ 19  
+20 ~ 37  
+...  
+마지막 숫자들은 차례로 +6 > +12 > +18 > ... 의 6의 배수가 더해지는 패턴을 확인.  
+그러므로 범위의 마지막 숫자를 이용해 입력된 수와 비교하면서 진행.  
 </pre>
