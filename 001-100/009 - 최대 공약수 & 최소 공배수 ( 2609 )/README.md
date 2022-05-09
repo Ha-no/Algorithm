@@ -28,13 +28,14 @@ Problem : [Problem Link](https://www.acmicpc.net/problem/2609)
 
 둘째 줄에는 입력으로 주어진 두 수의 최소 공배수를 출력한다.  
 
-### 입력 예제
+### 입력 / 출력 예제
 
+#### Input
 <pre>
 24 18
 </pre>
 
-### 출력 예제
+##### Output
 <pre>
 6
 72
