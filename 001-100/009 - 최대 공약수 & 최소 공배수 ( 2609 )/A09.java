@@ -1,9 +1,4 @@
 
-/*
-	¹®Á¦ : https://www.acmicpc.net/problem/2609
-	Ç®ÀÌ ³ë¼Ç : https://www.notion.so/d7f4de2205ba44ec8cd0986efc49ef8e
-*/
-
 package Algorithm;
 
 import java.io.BufferedReader;
@@ -24,7 +19,7 @@ public class A09{
     	
     	int max = fnc2( first, second );
     	
-		// ÃÖ¼Ò °ø¹è¼ö
+		// ìµœì†Œ ê³µë°°ìˆ˜
     	int min = first * second / max;
     	
     	output.append( max ).append( "\n" ).append( min );
@@ -34,8 +29,8 @@ public class A09{
     	in.close();    	
     }
     
-	// ÃÖ´ë °ø¾à¼ö ±¸ÇÏ´Â ÇÔ¼ö
-    // ¹æ½Ä 1 : ¹İº¹¹®
+	// ìµœëŒ€ ê³µì•½ìˆ˜ êµ¬í•˜ëŠ” í•¨ìˆ˜
+    // ë°©ì‹ 1 : ë°˜ë³µë¬¸
     public static int fnc1( int a, int b ) {
     	
     	int box = 0;
@@ -50,7 +45,7 @@ public class A09{
     	return a;
     }
     
-    // ¹æ½Ä 2 : Àç±Í
+    // ë°©ì‹ 2 : ì¬ê·€
     public static int fnc2( int a, int b ) {
     	
     	if( b == 0 ) { return a; }
