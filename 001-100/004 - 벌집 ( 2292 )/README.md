@@ -38,7 +38,7 @@ Problem : [Problem Link](https://www.acmicpc.net/problem/2292)
 
 ## 🌈풀이
 
-패턴을 찾아보니
+패턴을 찾아보니  
 1  
 2 ~ 7  
 8 ~ 19  
