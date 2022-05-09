@@ -3,8 +3,6 @@ Notion : [Notion Link](https://west-pineapple-c4d.notion.site/5bc82b0dba0949c6a4
 Problem : [Problem Link](https://www.acmicpc.net/problem/15552)
 ***
 
-
-
 <br/>
 
 ### 📋 문제
