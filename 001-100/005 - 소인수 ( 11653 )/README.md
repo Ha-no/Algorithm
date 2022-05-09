@@ -20,47 +20,46 @@ Problem : [Problem Link](https://www.acmicpc.net/problem/11653)
 
 N의 소인수분해 결과를 한 줄에 하나씩 오름차순으로 출력한다. N이 1인 경우 아무것도 출력하지 않는다.  
 
-### 입력 예제
+### 입력 / 출력 예제
 
-#### 1
+#### Input 1
 <pre>
 72
 </pre>
 
-#### 2
+#### Output 1
+<pre>
+2
+2
+2
+3
+3
+</pre>
+
+***
+
+#### Input 2
 <pre>
 3
 </pre>
 
-#### 3
+#### Output 2
+<pre>
+3
+</pre>
+
+***
+
+#### Input 3
 <pre>
 9991
-
 </pre>
 
-
-### 출력 예제
-
-#### 1
-<pre>
-2
-2
-2
-3
-3
-</pre>
-
-#### 2
-<pre>
-3
-</pre>
-
-#### 3
+#### Output 3
 <pre>
 97
 103
 </pre>
-
 
 ## 🌈풀이
 
