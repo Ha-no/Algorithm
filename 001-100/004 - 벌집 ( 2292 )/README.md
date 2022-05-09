@@ -35,3 +35,9 @@ Problem : [Problem Link](https://www.acmicpc.net/problem/2292)
 <pre>
 3
 </pre>
+
+## 풀이
+
+<pre style="background-color:orange">
+test
+</pre>
