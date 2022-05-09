@@ -99,7 +99,7 @@ BBBBBBBBBBBBBBBBBBBBBBW
 
 
 ## 🌈풀이
-<aside>
+
 💡 체스판을 표라고 생각하면 8 * 8 이상의 표이다.
 
 우리가 사용해야 할 표는 8 * 8 의 표이므로 오른쪽과 아래의 각 8칸은 꼭 포함이 되어야 함.
@@ -112,6 +112,4 @@ BBBBBBBBBBBBBBBBBBBBBBW
 
 마지막 칸의 문자와 다음줄의 문자가 다르면 count++
 
-모든 경우의 수 중 count가 가장 작은 수를 출력.
-
-</aside>
+모든 경우의 수 중 count가 가장 작은 수를 출력.  
