@@ -1,9 +1,4 @@
 
-/*
-	¹®Á¦ : https://www.acmicpc.net/problem/2981
-	Ç®ÀÌ ³ë¼Ç : https://www.notion.so/f85b8cb1a0c24e7bb21c9bf62668ef00
-*/
-
 package Algorithm;
 
 import java.io.BufferedReader;
@@ -24,7 +19,7 @@ public class A10{
     	
     }
     
-    // ÃÖ´ë °ø¾à¼ö ÇÔ¼ö
+    // ìµœëŒ€ ê³µì•½ìˆ˜ í•¨ìˆ˜
     static int fnc( int a, int b ) {
     	
     	while( b != 0 ) {
@@ -37,7 +32,7 @@ public class A10{
     	return a;
     }
     
-    // ÀÔ·Â ÇÔ¼ö
+    // ì…ë ¥ í•¨ìˆ˜
     static void input() throws Exception {
 
     	BufferedReader in = new BufferedReader( new InputStreamReader( System.in ) );
@@ -52,7 +47,7 @@ public class A10{
     	in.close();
     }
     
-    // ÇØ°á ÇÔ¼ö
+    // í•´ê²° í•¨ìˆ˜
     static void solve() {
     	
     	ArrayList<Integer> list = new ArrayList<Integer>();
@@ -60,32 +55,32 @@ public class A10{
     	
     	int max = 0;
     	
-    	// Math.abs()¸¦ »ı·«ÇÏ±â À§ÇØ Á¤·Ä
+    	// Math.abs()ë¥¼ ìƒëµí•˜ê¸° ìœ„í•´ ì •ë ¬
     	Arrays.sort( array );
     	
     	max = array[1] - array[0];
     	
-    	// 0-1 / 1-2 / 2-3 / ... ÀÇ °ªµéÀÇ ÃÖ´ë °ø¾à¼ö ±¸ÇÏ±â
+    	// 0-1 / 1-2 / 2-3 / ... ì˜ ê°’ë“¤ì˜ ìµœëŒ€ ê³µì•½ìˆ˜ êµ¬í•˜ê¸°
     	for( int a=2; a<n; a++ ) {
 
     		max = fnc( max, array[a] - array[a-1] );
     	}
     	
-    	// ÃÖ´ë °ø¾à¼öÀÇ °ø¾à¼ö ±¸ÇÏ±â
-    	// °ø¾à¼ö´Â ·çÆ®nÀ» ³ÑÁö ¾ÊÀ¸¹Ç·Î Math.sqrt() »ç¿ë
+    	// ìµœëŒ€ ê³µì•½ìˆ˜ì˜ ê³µì•½ìˆ˜ êµ¬í•˜ê¸°
+    	// ê³µì•½ìˆ˜ëŠ” ë£¨íŠ¸nì„ ë„˜ì§€ ì•Šìœ¼ë¯€ë¡œ Math.sqrt() ì‚¬ìš©
     	for( int a=2; a<=Math.sqrt( max ); a++ ) {
     		
-    		// Áßº¹¹æÁö¸¦ À§ÇØ Á¦°ö±ÙÀº µû·Î Ã³¸®
+    		// ì¤‘ë³µë°©ì§€ë¥¼ ìœ„í•´ ì œê³±ê·¼ì€ ë”°ë¡œ ì²˜ë¦¬
     		if( a * a == max ) { list.add( a ); }
-    		// ¾à¼ö ¸ğµÎ »ğÀÔ
-    		// »ğÀÔ½Ã a»Ó¸¸ ¾Æ´Ï¶ó a·Î ³ª´« ¸òµµ »ğÀÔ
+    		// ì•½ìˆ˜ ëª¨ë‘ ì‚½ì…
+    		// ì‚½ì…ì‹œ aë¿ë§Œ ì•„ë‹ˆë¼ aë¡œ ë‚˜ëˆˆ ëª«ë„ ì‚½ì…
     		else if( max % a == 0 ) {
     			list.add( a );
     			list.add( max / a );
     		}
     	}
 
-    	// ArrayList<>() Á¤·Ä
+    	// ArrayList<>() ì •ë ¬
     	Collections.sort( list );
     	
     	for( int a : list ) {
