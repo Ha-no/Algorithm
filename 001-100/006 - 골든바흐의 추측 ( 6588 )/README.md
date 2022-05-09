@@ -39,8 +39,9 @@ Problem : [Problem Link](https://www.acmicpc.net/problem/6588)
 
 또, 두 홀수 소수의 합으로 n을 나타낼 수 없는 경우에는 "Goldbach's conjecture is wrong."을 출력한다.  
 
-### 입력 예제
+### 입력 / 출력 예제
 
+#### Input 1
 <pre>
 8
 20
@@ -48,8 +49,7 @@ Problem : [Problem Link](https://www.acmicpc.net/problem/6588)
 0
 </pre>
 
-### 출력 예제
-
+#### Output 1
 <pre>
 8 = 3 + 5
 20 = 3 + 17
