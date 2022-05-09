@@ -1,7 +1,7 @@
 
 /*
-	문제 : https://www.acmicpc.net/problem/2292 
-	풀이 노션 : https://www.notion.so/1c519915b5b94411a72896fbff3f3371
+	tewa : https://www.acmicpc.net/problem/2292 
+	wae : https://www.notion.so/1c519915b5b94411a72896fbff3f3371
 */
 
 package Algorithm;
