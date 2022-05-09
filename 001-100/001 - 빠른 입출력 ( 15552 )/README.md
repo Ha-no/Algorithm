@@ -28,13 +28,13 @@ Java를 사용하고 있다면, Scanner와 System.out.println 대신 BufferedRea
 
 <br/>
 
-### 🖨출력
+### 🖨 출력
 
 각 테스트케이스마다 A+B를 한 줄에 하나씩 순서대로 출력한다.  
 
 <br/>
 
-### 🖥입력 / 출력 예제
+### 🖥 입력 / 출력 예제
 
 #### Input 1
 <pre>
