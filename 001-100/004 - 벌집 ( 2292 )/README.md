@@ -38,6 +38,6 @@ Problem : [Problem Link](https://www.acmicpc.net/problem/2292)
 
 ## 풀이
 
-<pre style="background-color:orange">
+<pre style="background-color:orange;">
 test
 </pre>
