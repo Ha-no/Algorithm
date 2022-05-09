@@ -8,11 +8,13 @@ Problem : [Problem Link](https://www.acmicpc.net/problem/2609)
 
 <br/>
 
-### 문제
+### 📋 문제
 
 두 개의 자연수를 입력받아 최대 공약수와 최소 공배수를 출력하는 프로그램을 작성하시오.  
 
-### 입력
+<br/>
+
+### ✒ 입력
 
 첫째 줄에는 두 개의 자연수가 주어진다.  
 
@@ -22,13 +24,17 @@ Problem : [Problem Link](https://www.acmicpc.net/problem/2609)
 
 그 다음 N개의 줄에는 정수들이 주어진다. 입력되는 정수의 절댓값은 4,000을 넘지 않는다.  
 
-### 출력
+<br/>
+
+### 🖨 출력
 
 첫째 줄에는 입력으로 주어진 두 수의 최대공약수를,  
 
 둘째 줄에는 입력으로 주어진 두 수의 최소 공배수를 출력한다.  
 
-### 입력 / 출력 예제
+<br/>
+
+### 🖥 입력 / 출력 예제
 
 #### Input
 <pre>
@@ -41,6 +47,7 @@ Problem : [Problem Link](https://www.acmicpc.net/problem/2609)
 72
 </pre>
 
+<br/>
 
 ## 🌈풀이
 
