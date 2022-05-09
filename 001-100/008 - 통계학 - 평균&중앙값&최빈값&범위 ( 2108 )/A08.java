@@ -1,9 +1,4 @@
 
-/*
-	¹®Á¦ : https://www.acmicpc.net/problem/2108
-	Ç®ÀÌ ³ë¼Ç : https://www.notion.so/3c748f47f4954cd3ac2064826b52208f
-*/
-
 package Algorithm;
 
 import java.io.BufferedReader;
@@ -37,7 +32,7 @@ public class A08{
     			
     			count += check[a];
     			
-    			// Áß¾Ó°ª
+    			// ì¤‘ì•™ê°’
     			if( mflag == 0 ) {
     				if( count >= Math.round( (double)n / 2 ) ) {
         				median = a - 4000;
@@ -45,7 +40,7 @@ public class A08{
         			}
     			}
     			
-    			// ÃÖºó°ª
+    			// ìµœë¹ˆê°’
     			if( idx == check[a] ) {
     				idx = check[a];
     				max = a - 4000;
@@ -58,13 +53,13 @@ public class A08{
     				flag = 0;
     			}
     			
-    			// ¹üÀ§ °è»êÀ» À§ÇÑ max / min
+    			// ë²”ìœ„ ê³„ì‚°ì„ ìœ„í•œ max / min
     			if( rmin > a ) { rmin = a - 4000; }
     			if( rmax < a ) { rmax = a - 4000; }
     		}
     	}
 
-    	// Æò±Õ
+    	// í‰ê· 
     	avg = Math.round( avg / (float)n );
     	
     	range = rmax - rmin;
