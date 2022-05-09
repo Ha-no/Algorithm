@@ -8,7 +8,7 @@ Problem : [Problem Link](https://www.acmicpc.net/problem/6588)
 
 <br/>
 
-### 문제
+### 📋 문제
 
 1742년, 독일의 아마추어 수학가 크리스티안 골드바흐는 레온하르트 오일러에게 다음과 같은 추측을 제안하는 편지를 보냈다.  
 
@@ -21,7 +21,9 @@ Problem : [Problem Link](https://www.acmicpc.net/problem/6588)
 
 백만 이하의 모든 짝수에 대해서, 이 추측을 검증하는 프로그램을 작성하시오.  
 
-### 입력
+<br/>
+
+### ✒ 입력
 
 입력은 하나 또는 그 이상의 테스트 케이스로 이루어져 있다. 테스트 케이스의 개수는 100,000개를 넘지 않는다.  
 
@@ -29,7 +31,9 @@ Problem : [Problem Link](https://www.acmicpc.net/problem/6588)
 
 입력의 마지막 줄에는 0이 하나 주어진다.  
 
-### 출력
+<br/>
+
+### 🖨 출력
 
 각 테스트 케이스에 대해서, n = a + b 형태로 출력한다.  
 
@@ -39,7 +43,9 @@ Problem : [Problem Link](https://www.acmicpc.net/problem/6588)
 
 또, 두 홀수 소수의 합으로 n을 나타낼 수 없는 경우에는 "Goldbach's conjecture is wrong."을 출력한다.  
 
-### 입력 / 출력 예제
+<br/>
+
+### 🖥 입력 / 출력 예제
 
 #### Input 1
 <pre>
@@ -55,6 +61,8 @@ Problem : [Problem Link](https://www.acmicpc.net/problem/6588)
 20 = 3 + 17
 42 = 5 + 37
 </pre>
+
+<br/>
 
 ## 🌈풀이
 
