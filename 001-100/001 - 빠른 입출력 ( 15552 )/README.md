@@ -7,7 +7,7 @@ Problem : [Problem Link](https://www.acmicpc.net/problem/15552)
 
 <br/>
 
-### 📖📃🧾📝문제
+### 📖📃🧾📝문제⌨🖨✏📋
 
 본격적으로 for문 문제를 풀기 전에 주의해야 할 점이 있다.  
 
