@@ -4,8 +4,6 @@ Notion : [Notion Link](https://west-pineapple-c4d.notion.site/f85b8cb1a0c24e7bb2
 Problem : [Problem Link](https://www.acmicpc.net/problem/2981)
 ***
 
-
-
 <br/>
 
 ### 문제
@@ -47,8 +45,9 @@ N개의 수가 주어졌을 때, 가능한 M을 모두 찾는 프로그램을 �
 <pre>
 2 4
 </pre>
-  
-  
+
+<br/>
+
 #### Input 2
 <pre>
 5
