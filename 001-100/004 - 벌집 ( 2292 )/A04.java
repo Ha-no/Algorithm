@@ -1,9 +1,4 @@
 
-/*
-	tewa : https://www.acmicpc.net/problem/2292 
-	wae : https://www.notion.so/1c519915b5b94411a72896fbff3f3371
-*/
-
 package Algorithm;
 
 import java.io.BufferedReader;
