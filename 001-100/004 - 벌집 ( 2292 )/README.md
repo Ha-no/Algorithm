@@ -5,7 +5,7 @@ Problem : [Problem Link](https://www.acmicpc.net/problem/2292)
 
 <br/>
 
-### 문제
+### 📋 문제
 
 ![IMG](https://user-images.githubusercontent.com/97273652/167353432-9e1c57f4-1ba3-4844-9963-9cf26f179f03.png)
 
@@ -15,26 +15,33 @@ Problem : [Problem Link](https://www.acmicpc.net/problem/2292)
 
 예를 들면, 13까지는 3개, 58까지는 5개를 지난다.  
 
-### 입력
+<br/>
+
+### ✒ 입력
 
 첫째 줄에 N(1 ≤ N ≤ 1,000,000,000)이 주어진다.  
 
-### 출력
+<br/>
+
+### 🖨 출력
 
 입력으로 주어진 방까지 최소 개수의 방을 지나서 갈 때 몇 개의 방을 지나는지 출력한다.  
 
+<br/>
 
-### 입력 예제
+### 🖥 입력 / 출력 예제
 
+#### Input 1
 <pre>
 13
 </pre>
 
-### 출력 예제
-
+#### Output 1
 <pre>
 3
 </pre>
+
+<br/>
 
 ## 🌈풀이
 
