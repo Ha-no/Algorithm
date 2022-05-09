@@ -1,8 +1,8 @@
 
 
 /*
-	¹®Á¦ : https://www.acmicpc.net/problem/4673
-	Ç®ÀÌ ³ë¼Ç : https://www.notion.so/254aaaae1e864935832cf1556145d840
+	Â¹Â®ÃÂ¦ : https://www.acmicpc.net/problem/4673
+	Ã‡Â®Ã€ÃŒ Â³Ã«Â¼Ã‡ : https://www.notion.so/254aaaae1e864935832cf1556145d840
 */
 
 package Algorithm;
