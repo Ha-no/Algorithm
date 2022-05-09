@@ -43,8 +43,8 @@ Problem : [Problem Link](https://www.acmicpc.net/problem/2609)
 
 ## 🌈풀이
 
-최소 공배수 :  
-두 자연수 의 곱 / 최대 공약수  
-
 최대 공약수 :  
 반복문, 재귀 두가지 방식을 이용  
+
+최소 공배수 :  
+( 자연수 A * 자연수  / 최대 공약수  
