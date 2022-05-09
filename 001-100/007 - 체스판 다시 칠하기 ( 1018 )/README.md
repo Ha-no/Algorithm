@@ -35,9 +35,9 @@ N과 M은 8보다 크거나 같고, 50보다 작거나 같은 자연수이다.
 
 첫째 줄에 지민이가 다시 칠해야 하는 정사각형 개수의 최솟값을 출력한다.  
 
-### 입력 예제
+### 입력 / 출력 예제
 
-#### 1
+#### Input 1
 <pre>
 8 8
 WBWBWBWB
@@ -50,7 +50,14 @@ WBWBWBWB
 BWBWBWBW
 </pre>
 
-#### 2
+#### Output 1
+<pre>
+1
+</pre>
+
+***
+
+#### Input 2
 <pre>
 10 13
 BBBBBBBBWBWBW
@@ -65,7 +72,14 @@ WWWWWWWWWWBWB
 WWWWWWWWWWBWB
 </pre>
 
-#### 3
+#### Output 2
+<pre>
+12
+</pre>
+
+***
+
+#### Input 3
 <pre>
 9 23
 BBBBBBBBBBBBBBBBBBBBBBB
@@ -79,20 +93,7 @@ BBBBBBBBBBBBBBBBBBBBBBB
 BBBBBBBBBBBBBBBBBBBBBBW
 </pre>
 
-
-### 출력 예제
-
-#### 1
-<pre>
-1
-</pre>
-
-#### 2
-<pre>
-12
-</pre>
-
-#### 3
+#### Output 3
 <pre>
 31
 </pre>
