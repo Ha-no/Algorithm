@@ -7,7 +7,7 @@ Problem : [Problem Link](https://www.acmicpc.net/problem/2292)
 
 ### 문제
 
-[IMG](https://user-images.githubusercontent.com/97273652/167353253-bf3258ef-7ec2-44af-9e68-ca05b7959e5f.jpg)  
+![IMG](https://user-images.githubusercontent.com/97273652/167353253-bf3258ef-7ec2-44af-9e68-ca05b7959e5f.jpg)  
 
 위의 그림과 같이 육각형으로 이루어진 벌집이 있다. 그림에서 보는 바와 같이 중앙의 방 1부터 시작해서 이웃하는 방에 돌아가면서 1씩 증가하는 번호를 주소로 매길 수 있다.  
 
