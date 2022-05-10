@@ -1,4 +1,5 @@
 # Algorithm
+알고리즘 문제중 틀렸거나 / 기억해야하는 문제
 
 
 <details>
