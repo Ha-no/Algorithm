@@ -1,4 +1,5 @@
 main = 동적계획법 ( 피보나치 수열 )  
+T0 = 부녀회장이 될테야 ( https://www.acmicpc.net/problem/2775 )  
 T1 = 참외밭 ( https://www.acmicpc.net/problem/2477 )  
 T2 = 하키 ( https://www.acmicpc.net/problem/1358 )  
 T3 = 신나는 함수 실행 ( https://www.acmicpc.net/problem/9184 )  
