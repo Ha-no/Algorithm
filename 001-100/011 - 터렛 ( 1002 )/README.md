@@ -8,7 +8,7 @@ Problem : [Problem Link](https://www.acmicpc.net/problem/1002)
 
 <br/>
 
-### 📋 
+### 📋 문제
 
 ![img](https://user-images.githubusercontent.com/97273652/167371276-48b2da2e-08f9-4385-96d6-969f1a2a879c.jpg)
 
