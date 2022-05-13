@@ -55,4 +55,4 @@ Problem : [Problem Link](https://www.acmicpc.net/problem/2609)
 반복문, 재귀 두가지 방식을 이용  
 
 최소 공배수 :  
-( 자연수 A * 자연수  / 최대 공약수  
+( 자연수 A * 자연수  / 최대 공약수 )  
