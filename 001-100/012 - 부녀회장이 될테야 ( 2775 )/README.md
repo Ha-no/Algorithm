@@ -1,6 +1,6 @@
 
 ***
-Notion : [Notion Link]( )  
+Notion : [Notion Link](https://west-pineapple-c4d.notion.site/9490de0f65644612968762c8f82c0d15)  
 Problem : [Problem Link](https://www.acmicpc.net/problem/2775)
 ***
 
