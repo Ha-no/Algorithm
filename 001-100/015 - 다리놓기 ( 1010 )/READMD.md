@@ -67,10 +67,10 @@ Problem : [Problem Link](https://www.acmicpc.net/problem/1010)
 
 조합 공식  
 
-&nbsp; ![1](https://user-images.githubusercontent.com/97273652/169810434-ae5c2e9d-3432-4c86-b071-a299fde673fa.png)
+&nbsp;&nbsp; ![1](https://user-images.githubusercontent.com/97273652/169810434-ae5c2e9d-3432-4c86-b071-a299fde673fa.png)
 
 1번 성질  
-![2](https://user-images.githubusercontent.com/97273652/169810479-615071bc-a0bb-4c3f-9a26-0e65a931fb6a.png)
+&nbsp;&nbsp; ![2](https://user-images.githubusercontent.com/97273652/169810479-615071bc-a0bb-4c3f-9a26-0e65a931fb6a.png)
 
 2번 성질  
-![3](https://user-images.githubusercontent.com/97273652/169810494-5c82f80c-9c50-47a5-9af2-13f65e0875de.png)
+&nbsp;&nbsp; ![3](https://user-images.githubusercontent.com/97273652/169810494-5c82f80c-9c50-47a5-9af2-13f65e0875de.png)
