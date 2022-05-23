@@ -10,6 +10,8 @@ Problem : [Problem Link](https://www.acmicpc.net/problem/1010)
 
 ### 📋 문제
 
+![pic1](https://user-images.githubusercontent.com/97273652/169810764-68218fd1-de9d-4eaf-ba3d-63e607a68799.jpg)
+
 재원이는 한 도시의 시장이 되었다.  
 이 도시에는 도시를 동쪽과 서쪽으로 나누는 큰 일직선 모양의 강이 흐르고 있다.  
 하지만 재원이는 다리가 없어서 시민들이 강을 건너는데 큰 불편을 겪고 있음을 알고 다리를 짓기로 결심하였다.  
@@ -64,7 +66,8 @@ Problem : [Problem Link](https://www.acmicpc.net/problem/1010)
 그리고 메모이제이션을 추가하여 동적계획법으로 구현했다.
 
 조합 공식  
-![1](https://user-images.githubusercontent.com/97273652/169810434-ae5c2e9d-3432-4c86-b071-a299fde673fa.png)
+
+&nbsp; ![1](https://user-images.githubusercontent.com/97273652/169810434-ae5c2e9d-3432-4c86-b071-a299fde673fa.png)
 
 1번 성질  
 ![2](https://user-images.githubusercontent.com/97273652/169810479-615071bc-a0bb-4c3f-9a26-0e65a931fb6a.png)
