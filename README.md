@@ -48,6 +48,3 @@
 </div>
 </details>
 
-tt
-
-djdnjf. 
