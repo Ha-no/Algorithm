@@ -10,6 +10,8 @@ Problem : [Problem Link](https://www.acmicpc.net/problem/11729)
 
 ### 📋 문제
 
+![image](https://user-images.githubusercontent.com/97273652/171153196-51ae96ea-105d-465a-8d2b-ef311847613b.png)
+
 세 개의 장대가 있고 첫 번째 장대에는 반경이 서로 다른 n개의 원판이 쌓여 있다.  
 각 원판은 반경이 큰 순서대로 쌓여있다.  
 이제 수도승들이 다음 규칙에 따라 첫 번째 장대에서 세 번째 장대로 옮기려 한다.  
