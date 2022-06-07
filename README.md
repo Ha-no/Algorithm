@@ -1,7 +1,9 @@
 # Algorithm
 
  해결했던 알고리즘 문제 중 틀렸거나 / 기억해야하는 문제 정리
-
+***
+ Notion : [Notion Link](https://west-pineapple-c4d.notion.site/a12f064441fc47358158d33f0b89d8ee?v=6569da3780db49089eace0259cf0b444)  
+***
 
 <details>
 <summary>전체 보기</summary>
