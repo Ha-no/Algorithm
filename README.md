@@ -9,7 +9,7 @@
 <summary>전체 보기</summary>
 <div markdown="1">
 
-001(https://github.com/Ha-no/Algorithm/tree/main/001-100/001%20-%20%EB%B9%A0%EB%A5%B8%20%EC%9E%85%EC%B6%9C%EB%A0%A5%20(%2015552%20)) - 빠른 입출력 ( 15552 )  
+[001](https://github.com/Ha-no/Algorithm/tree/main/001-100/001%20-%20%EB%B9%A0%EB%A5%B8%20%EC%9E%85%EC%B6%9C%EB%A0%A5%20(%2015552%20)) - 빠른 입출력 ( 15552 )  
 002 - 셀프넘버 구하기 ( 4673 )  
 003 - 한수 구하기 ( 4673 )  
 004 - 벌집 ( 2292 )  
