@@ -103,8 +103,6 @@ Problem : [Problem Link](https://www.acmicpc.net/problem/15649)
 4 3 2 1
 </pre>
 
-***
-
 <br/>
 
 ## 🌈풀이
