@@ -35,7 +35,7 @@
 [022](https://github.com/Ha-no/Algorithm/tree/main/001-100/022%20-%20%EC%84%9C%EB%A1%9C%20%EB%8B%A4%EB%A5%B8%20%EB%B6%80%EB%B6%84%20%EB%AC%B8%EC%9E%90%EC%97%B4%EC%9D%98%20%EA%B0%9C%EC%88%98%20(%2011478%20)) - 서로 다른 부분 문자열의 개수 ( 11478 )  
 [023](https://github.com/Ha-no/Algorithm/tree/main/001-100/023%20-%20N%EA%B3%BC%20M(%201%20)%20(%2015649%20)) - N과 M( 1 ) ( 15649 )  
 [024](https://github.com/Ha-no/Algorithm/tree/main/001-100/024%20-%20N%EA%B3%BC%20M(%202%20)%20(%2015650%20)) - N과 M( 2 ) ( 15650 )  
-025
+[025]
 
 </div>
 </details>
