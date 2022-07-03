@@ -36,7 +36,7 @@
 [023](https://github.com/Ha-no/Algorithm/tree/main/001-100/023%20-%20N%EA%B3%BC%20M(%201%20)%20(%2015649%20)) - N과 M( 1 ) ( 15649 )  
 [024](https://github.com/Ha-no/Algorithm/tree/main/001-100/024%20-%20N%EA%B3%BC%20M(%202%20)%20(%2015650%20)) - N과 M( 2 ) ( 15650 )  
 [025](https://github.com/Ha-no/Algorithm/tree/main/001-100/025%20-%20N-Queen%20(%209663%20)) - N-Queen ( 9663 )  
-[026] -
+[026]
 
 </div>
 </details>
