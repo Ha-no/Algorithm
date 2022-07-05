@@ -1,7 +1,7 @@
 
 ***
 Notion : [Notion Link](https://west-pineapple-c4d.notion.site/1dc69bebd4534c109e8dce3c33c5eeb0)  
-Problem : [Problem Link](https://www.acmicpc.net/problem/9020
+Problem : [Problem Link](https://www.acmicpc.net/problem/9020)
 ***
 
 
