@@ -14,7 +14,7 @@
 [003](https://github.com/Ha-no/Algorithm/tree/main/001-100/003%20-%20%ED%95%9C%EC%88%98%20%EA%B5%AC%ED%95%98%EA%B8%B0%20(%201065%20)) - 한수 구하기 ( 4673 )  
 [004](https://github.com/Ha-no/Algorithm/tree/main/001-100/004%20-%20%EB%B2%8C%EC%A7%91%20(%202292%20)) - 벌집 ( 2292 )  
 [005](https://github.com/Ha-no/Algorithm/tree/main/001-100/005%20-%20%EC%86%8C%EC%9D%B8%EC%88%98%20(%2011653%20)) - 소인수 ( 116553 )  
-[006](https://github.com/Ha-no/Algorithm/tree/main/001-100/006%20-%20%EA%B3%A8%EB%93%A0%EB%B0%94%ED%9D%90%EC%9D%98%20%EC%B6%94%EC%B8%A1%20(%206588%20)) - 골든바흐의 추측 ( 6588 )  
+[006](https://github.com/Ha-no/Algorithm/tree/main/001-100/006%20-%20%EA%B3%A8%EB%93%9C%EB%B0%94%ED%9D%90%EC%9D%98%20%EC%B6%94%EC%B8%A1%20(%209020%20)) - 골든바흐의 추측 ( 9020 )  
 [007](https://github.com/Ha-no/Algorithm/tree/main/001-100/007%20-%20%EC%B2%B4%EC%8A%A4%ED%8C%90%20%EB%8B%A4%EC%8B%9C%20%EC%B9%A0%ED%95%98%EA%B8%B0%20(%201018%20)) - 체스판 다시 칠하기 ( 1018 )  
 [008](https://github.com/Ha-no/Algorithm/tree/main/001-100/008%20-%20%ED%86%B5%EA%B3%84%ED%95%99%20-%20%ED%8F%89%EA%B7%A0%26%EC%A4%91%EC%95%99%EA%B0%92%26%EC%B5%9C%EB%B9%88%EA%B0%92%26%EB%B2%94%EC%9C%84%20(%202108%20)) - 통계학 - 평균 & 중앙값 & 최빈값 & 범위 ( 2108 )  
 [009](https://github.com/Ha-no/Algorithm/tree/main/001-100/009%20-%20%EC%B5%9C%EB%8C%80%20%EA%B3%B5%EC%95%BD%EC%88%98%20%26%20%EC%B5%9C%EC%86%8C%20%EA%B3%B5%EB%B0%B0%EC%88%98%20(%202609%20)) - 최대 공약수 & 최소 공배수 ( 2609 )  
