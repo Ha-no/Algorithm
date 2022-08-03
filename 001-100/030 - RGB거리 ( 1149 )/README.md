@@ -125,7 +125,7 @@ i(2 ≤ i ≤ N-1)번 집의 색은 i-1번, i+1번 집의 색과 같지 않아�
 
 아래의 표를 생각해 보자.  
 
-![1](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1794447f-ee87-4632-b0a5-053019878ba6/Untitled.png)  
+![Untitled](https://user-images.githubusercontent.com/97273652/182507689-2c0adcf4-e9eb-4afc-8ae2-a8f7ae91639c.png)
 
 [1][0]에는 [0][-]의 값들 중 가장 작은 값을 가져와서 +=를 해줘야 한다.  
 
