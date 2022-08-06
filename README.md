@@ -38,7 +38,12 @@
 [025](https://github.com/Ha-no/Algorithm/tree/main/001-100/025%20-%20N-Queen%20(%209663%20)) - N-Queen ( 9663 )  
 [026](https://github.com/Ha-no/Algorithm/tree/main/001-100/026%20-%20%EC%97%B0%EC%86%8D%ED%95%A9%20(%201912%20)) - 연속합 ( 1912 )  
 [027](https://github.com/Ha-no/Algorithm/tree/main/001-100/027%20-%20%EC%8A%A4%EB%8F%84%EC%BF%A0%20(%202580%20)) - 스도쿠 ( 2580 )  
-028 -
+[028](https://github.com/Ha-no/Algorithm/tree/main/001-100/028%20-%20%EC%97%B0%EC%82%B0%EC%9E%90%20%EB%81%BC%EC%9B%8C%EB%84%A3%EA%B8%B0%20(%2014888%20)) - 연산자 끼워넣기 ( 14888 )  
+[029](https://github.com/Ha-no/Algorithm/tree/main/001-100/029%20-%20%EA%B3%84%EB%8B%A8%20%EC%98%A4%EB%A5%B4%EA%B8%B0%20(%202579%20)) - 계단 오르기 ( 2579 )  
+[030](https://github.com/Ha-no/Algorithm/tree/main/001-100/030%20-%20RGB%EA%B1%B0%EB%A6%AC%20(%201149%20)) - RGB거리 ( 1149 )  
+
+[031](https://github.com/Ha-no/Algorithm/tree/main/001-100/031%20-%201%EB%A1%9C%20%EB%A7%8C%EB%93%A4%EA%B8%B0%20(%201463%20)) - 1로 만들기 ( 1463 )  
+[032](https://github.com/Ha-no/Algorithm/tree/main/001-100/032%20-%20%EA%B2%8C%EC%9E%84%20(%201072%20)) - 게임 ( 1072 )  
 
 </div>
 </details>
@@ -75,6 +80,14 @@
 [023](https://github.com/Ha-no/Algorithm/tree/main/001-100/023%20-%20N%EA%B3%BC%20M(%201%20)%20(%2015649%20)) - N과 M( 1 ) ( 15649 )  
 [024](https://github.com/Ha-no/Algorithm/tree/main/001-100/024%20-%20N%EA%B3%BC%20M(%202%20)%20(%2015650%20)) - N과 M( 2 ) ( 15650 )   
 [025](https://github.com/Ha-no/Algorithm/tree/main/001-100/025%20-%20N-Queen%20(%209663%20)) - N-Queen ( 9663 )  
+[026](https://github.com/Ha-no/Algorithm/tree/main/001-100/026%20-%20%EC%97%B0%EC%86%8D%ED%95%A9%20(%201912%20)) - 연속합 ( 1912 )  
+[027](https://github.com/Ha-no/Algorithm/tree/main/001-100/027%20-%20%EC%8A%A4%EB%8F%84%EC%BF%A0%20(%202580%20)) - 스도쿠 ( 2580 )  
+[028](https://github.com/Ha-no/Algorithm/tree/main/001-100/028%20-%20%EC%97%B0%EC%82%B0%EC%9E%90%20%EB%81%BC%EC%9B%8C%EB%84%A3%EA%B8%B0%20(%2014888%20)) - 연산자 끼워넣기 ( 14888 )  
+[029](https://github.com/Ha-no/Algorithm/tree/main/001-100/029%20-%20%EA%B3%84%EB%8B%A8%20%EC%98%A4%EB%A5%B4%EA%B8%B0%20(%202579%20)) - 계단 오르기 ( 2579 )  
+[030](https://github.com/Ha-no/Algorithm/tree/main/001-100/030%20-%20RGB%EA%B1%B0%EB%A6%AC%20(%201149%20)) - RGB거리 ( 1149 )  
+
+[031](https://github.com/Ha-no/Algorithm/tree/main/001-100/031%20-%201%EB%A1%9C%20%EB%A7%8C%EB%93%A4%EA%B8%B0%20(%201463%20)) - 1로 만들기 ( 1463 )  
+[032](https://github.com/Ha-no/Algorithm/tree/main/001-100/032%20-%20%EA%B2%8C%EC%9E%84%20(%201072%20)) - 게임 ( 1072 )  
 
 </div>
 </details>
