@@ -44,7 +44,7 @@
 
 [031](https://github.com/Ha-no/Algorithm/tree/main/001-100/031%20-%201%EB%A1%9C%20%EB%A7%8C%EB%93%A4%EA%B8%B0%20(%201463%20)) - 1로 만들기 ( 1463 )  
 [032](https://github.com/Ha-no/Algorithm/tree/main/001-100/032%20-%20%EA%B2%8C%EC%9E%84%20(%201072%20)) - 게임 ( 1072 )  
---------------------
+-------------------
 
 
 
